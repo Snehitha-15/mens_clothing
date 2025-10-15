@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 
 // ** Router Import
-import Router from './Router'
+import Router from './Router/AppRoutes'
 
 const App = () => {
   return (
