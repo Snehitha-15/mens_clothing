@@ -1,0 +1,171 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+import shirt1 from "@src/assets/images/shirts/shirt1.jpg";
+import shirt2 from "@src/assets/images/shirts/shirt2.jpg";
+import shirt3 from "@src/assets/images/shirts/shirt3.jpg";
+import shirt4 from "@src/assets/images/shirts/shirt4.jpg";
+import shirt5 from "@src/assets/images/shirts/shirt5.jpg";
+import shirt6 from "@src/assets/images/shirts/shirt6.jpg";
+import shirt7 from "@src/assets/images/shirts/shirt7.jpg";
+import shirt8 from "@src/assets/images/shirts/shirt8.jpg";
+import shirt9 from "@src/assets/images/shirts/shirt9.jpg";
+import shirt10 from "@src/assets/images/shirts/shirt10.jpg";
+import shirt11 from "@src/assets/images/shirts/shirt11.jpg";
+import shirt12 from "@src/assets/images/shirts/shirt12.jpg";
+import shirt13 from "@src/assets/images/shirts/shirt13.jpg";
+import shirt14 from "@src/assets/images/shirts/shirt14.jpg";
+import shirt15 from "@src/assets/images/shirts/shirt15.jpg";
+
+
+const initialState = {
+  shirts: [
+    {
+      id: 1,
+      name: "Classic White Cotton Shirt",
+      price: 1199,
+      image: shirt1,
+      description: "Premium white shirt made with 100% cotton for a smooth feel."
+    },
+    {
+      id: 2,
+      name: "Blue Denim Casual Shirt",
+      price: 1399,
+      image: shirt2,
+      description: "Stylish denim shirt for a casual yet confident look."
+    },
+    {
+      id: 3,
+      name: "Slim Fit Formal Shirt",
+      price: 1499,
+      image: shirt3,
+      description: "Tailored fit shirt perfect for business meetings."
+    },
+    {
+      id: 4,
+      name: "Checked Cotton Shirt",
+      price: 1099,
+      image: shirt4,
+      description: "Trendy checked shirt for your daily comfort."
+    },
+    {
+      id: 5,
+      name: "Linen Casual Shirt",
+      price: 1599,
+      image: shirt5,
+      description: "Soft breathable linen shirt ideal for summer wear."
+    },
+    {
+      id: 6,
+      name: "Black Formal Shirt",
+      price: 1299,
+      image: shirt6,
+      description: "Elegant black shirt designed for formal occasions."
+    },
+    {
+      id: 7,
+      name: "Grey Striped Shirt",
+      price: 1199,
+      image: shirt7,
+      description: "Striped cotton shirt for a classy and comfortable look."
+    },
+    {
+      id: 8,
+      name: "Olive Green Military Shirt",
+      price: 1499,
+      image: shirt8,
+      description: "Rugged military-style shirt for outdoor lovers."
+    },
+    {
+      id: 9,
+      name: "Navy Blue Slim Shirt",
+      price: 1399,
+      image: shirt9,
+      description: "Smart slim fit shirt perfect for evening wear."
+    },
+    {
+      id: 10,
+      name: "Light Pink Formal Shirt",
+      price: 1299,
+      image: shirt10,
+      description: "Soft pastel formal shirt for classy professionals."
+    },
+    {
+      id: 11,
+      name: "Khaki Cotton Shirt",
+      price: 999,
+      image: shirt11,
+      description: "Casual khaki shirt made for comfort and durability."
+    },
+    {
+      id: 12,
+      name: "Navy Checked Office Shirt",
+      price: 1199,
+      image: shirt12,
+      description: "Business casual shirt with modern checks."
+    },
+    {
+      id: 13,
+      name: "Printed Floral Shirt",
+      price: 1399,
+      image: shirt13,
+      description: "Trendy floral shirt for parties and casual outings."
+    },
+    {
+      id: 14,
+      name: "Full Sleeve Linen Shirt",
+      price: 1699,
+      image: shirt14,
+      description: "Breathable linen shirt with full sleeves."
+    },
+    {
+      id: 15,
+      name: "Classic Black Cotton Shirt",
+      price: 1199,
+      image: shirt15,
+      description: "Simple and elegant cotton shirt in classic black."
+    },
+    // {
+    //   id: 16,
+    //   name: "Sky Blue Casual Shirt",
+    //   price: 1099,
+    //   image: "/images/shirts/shirt16.jpg",
+    //   description: "Soft sky blue shirt made for daily wear."
+    // },
+    // {
+    //   id: 17,
+    //   name: "Button Down Oxford Shirt",
+    //   price: 1499,
+    //   image: "/images/shirts/shirt17.jpg",
+    //   description: "Durable Oxford fabric shirt with button-down collar."
+    // },
+    // {
+    //   id: 18,
+    //   name: "Charcoal Grey Shirt",
+    //   price: 1399,
+    //   image: "/images/shirts/shirt18.jpg",
+    //   description: "Modern charcoal grey shirt for evening events."
+    // },
+    // {
+    //   id: 19,
+    //   name: "Plaid Cotton Shirt",
+    //   price: 1299,
+    //   image: "/images/shirts/shirt19.jpg",
+    //   description: "Soft plaid design with a casual fit."
+    // },
+    // {
+    //   id: 20,
+    //   name: "Beige Office Shirt",
+    //   price: 1199,
+    //   image: "/images/shirts/shirt20.jpg",
+    //   description: "Light beige formal shirt that goes with any outfit."
+    // },
+  ],
+};
+
+const shirtsSlice = createSlice({
+  name: "shirts",
+  initialState,
+  reducers: {},
+});
+
+export default shirtsSlice.reducer;

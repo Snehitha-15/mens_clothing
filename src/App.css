@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+
+/* Shirts */
+
+/* 🌐 Global Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header */
+.nav-item {
+  color: #333;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #007bff;
+}
+
+/* 🧥 Shirts Section */
+.shirts-container {
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product-card {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.price {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Footer (Optional for later) */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #888;
+}
