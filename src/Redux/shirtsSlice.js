@@ -15,6 +15,9 @@ import shirt12 from "../assets/images/shirts/shirt12.jpg";
 import shirt13 from "../assets/images/shirts/shirt13.jpg";
 import shirt14 from "../assets/images/shirts/shirt14.jpg";
 import shirt15 from "../assets/images/shirts/shirt15.jpg";
+import shirt16 from "../assets/images/shirts/shirt16.jpg";
+import shirt17 from "../assets/images/shirts/shirt17.jpg";
+import shirt18 from "../assets/images/shirts/shirt18.jpg";
 
 
 const initialState = {
@@ -124,41 +127,28 @@ const initialState = {
       image: shirt15,
       description: "Simple and elegant cotton shirt in classic brown."
     },
-    // {
-    //   id: 16,
-    //   name: "Sky Blue Casual Shirt",
-    //   price: 1099,
-    //   image: "/images/shirts/shirt16.jpg",
-    //   description: "Soft sky blue shirt made for daily wear."
-    // },
-    // {
-    //   id: 17,
-    //   name: "Button Down Oxford Shirt",
-    //   price: 1499,
-    //   image: "/images/shirts/shirt17.jpg",
-    //   description: "Durable Oxford fabric shirt with button-down collar."
-    // },
-    // {
-    //   id: 18,
-    //   name: "Charcoal Grey Shirt",
-    //   price: 1399,
-    //   image: "/images/shirts/shirt18.jpg",
-    //   description: "Modern charcoal grey shirt for evening events."
-    // },
-    // {
-    //   id: 19,
-    //   name: "Plaid Cotton Shirt",
-    //   price: 1299,
-    //   image: "/images/shirts/shirt19.jpg",
-    //   description: "Soft plaid design with a casual fit."
-    // },
-    // {
-    //   id: 20,
-    //   name: "Beige Office Shirt",
-    //   price: 1199,
-    //   image: "/images/shirts/shirt20.jpg",
-    //   description: "Light beige formal shirt that goes with any outfit."
-    // },
+    {
+      id: 16,
+      name: "Sky Blue Casual Shirt",
+      price: 1099,
+      image: shirt18,
+      description: "Soft sky blue shirt made for daily wear."
+    },
+    {
+      id: 17,
+      name: "Button Down Oxford Shirt",
+      price: 1499,
+      image: shirt16,
+      description: "Durable Oxford fabric shirt with button-down collar."
+    },
+    {
+      id: 18,
+      name: "Classy Shirt",
+      price: 1399,
+      image: shirt17,
+      description: "Modern Classy shirt for evening events."
+    },
+    
   ],
 };
 
