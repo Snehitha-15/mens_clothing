@@ -1,27 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import app from './Router/Shirts';
+import React, { Suspense } from 'react'
 
-function App() {
+// ** Router Import
+import Router from './Router/AppRoutes'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <app/>
-      </header>
-    </div>
-  );
+    <Suspense fallback={null}>
+      <Router />
+    </Suspense>
+  )
 }
 
-export default App;
+export default App

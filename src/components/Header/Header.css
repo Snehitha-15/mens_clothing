@@ -1,0 +1,56 @@
+.header-nav {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.brand-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #111;
+  display: flex;
+  align-items: baseline;
+}
+
+.brand-title {
+  color: #000;
+  margin-right: 2px;
+}
+
+.brand-sub {
+  color: #999;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  border-radius: 20px;
+  padding-right: 40px;
+  min-width: 200px;
+}
+
+.search-btn {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-input {
+    min-width: 140px;
+  }
+}
