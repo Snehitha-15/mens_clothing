@@ -1,4 +1,7 @@
 // src/components/Categories.jsx
+
+//reusable component gor categories
+
 import React from "react";
 
 const Categories = ({ categories, selected, onSelect }) => {

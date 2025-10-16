@@ -8,12 +8,12 @@ import Categories from "../../components/Categories";
 const categoryList = ["Shirts", "Pants", "T-Shirts", "Sweaters", "Shorts", "Jackets", "Jeans", "Sweatshirts"];
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Shirts");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const dispatch = useDispatch();
 
   // Dynamically get products based on selected category
   const products = useSelector((state) => {
-    const key = selectedCategory.toLowerCase(); // must match your slice name
+    const key = selectedCategory.toLowerCase(); 
     return state[key] ? state[key][key] : [];
   });
 
