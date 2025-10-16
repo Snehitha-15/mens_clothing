@@ -4,9 +4,6 @@ import { combineReducers } from "@reduxjs/toolkit"; // ✅ Import combineReducer
 // ✅ Import all your slice reducers
 import cartReducer from "./cartSlice";
 import userReducer from "./userSlice";
-
-import shirtReducer from "./shirtsSlice";
-import pantsReducer from "./pantsSlice"; 
 import jacketReducer from "./jacketSlice";
 
 import shirtsReducer from "./shirtsSlice";
