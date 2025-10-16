@@ -44,7 +44,7 @@ const Products = () => {
                   width="100%"
                   src={item.image}
                   alt={item.name}
-                  style={{ height: "220px", objectFit: "cover" }}
+                  style={{ height: "220px" }}
                 />
                 <CardBody style={{ padding: "10px" }}>
                   <CardTitle tag="h6">{item.name}</CardTitle>
