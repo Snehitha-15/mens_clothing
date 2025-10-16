@@ -1,31 +1,33 @@
 // src/Redux/rootReducer.js
-import { combineReducers } from "@reduxjs/toolkit"; // ✅ Import combineReducers
+import { combineReducers } from "@reduxjs/toolkit";
 
-// ✅ Import all your slice reducers
 import cartReducer from "./cartSlice";
 import userReducer from "./userSlice";
-import jacketReducer from "./jacketSlice";
 import shirtsReducer from "./shirtsSlice";
 import pantsReducer from "./pantsSlice";
+import jacketsReducer from "./jacketSlice";
 import tshirtsReducer from "./tshirtsSlice";
 import sweatersReducer from "./sweaterSlice";
 import shortsReducer from "./shortsSlice";
-import jeansReducer from "./jeansSlice"; // If you added jeansSlice
 import blazerReducer from "./blazerSlice";
+import jeansReducer from "./jeansSlice";
+import sweatshirtsReducer from "./sweatshirtSlice";
+import suitsReducer from "./suitSlice"; 
 
 
-// ✅ Combine reducers
 const rootReducer = combineReducers({
   cart: cartReducer,
   user: userReducer,
   shirts: shirtsReducer,
   pants: pantsReducer,
-  jackets: jacketReducer,
+  jackets: jacketsReducer,
   tshirts: tshirtsReducer,
   sweaters: sweatersReducer,
   shorts: shortsReducer,
-  jeans: jeansReducer, // If using jeans
   blazers: blazerReducer,
+  jeans: jeansReducer,
+  sweatshirts: sweatshirtsReducer,
+  suits: suitsReducer, 
 });
 
 export default rootReducer;
