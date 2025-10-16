@@ -6,25 +6,35 @@ import { addToCart } from "../../Redux/cartSlice";
 import Categories from "../../components/Categories";
 
 // List of categories
-const categoryList = ["Shirts", "Pants", "T-Shirts", "Sweaters", "Shorts", "Jackets", "Jeans", "Sweatshirts", "Blazer", "Suits"];
+const categoryList = ["Shirts", "Pants", "T-Shirts", "Sweaters", "Shorts", "Jackets", "Jeans", "Sweatshirts", "Blazers", "Suits"];
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const dispatch = useDispatch();
 
   const products = useSelector((state) => {
+  if (!selectedCategory) return []; // nothing selected
 
-    let key = selectedCategory.toLowerCase();
+  let key = selectedCategory.toLowerCase();
 
-    // Normalize category names to Redux slice keys
-    if (key === "t-shirts") key = "tshirts";
-    if (key === "sweaters") key = "sweaters";
-    if (key === "shorts") key = "shorts";
+  // Map category names to slice keys
+  const map = {
+    "t-shirts": "tshirts",
+    "sweatshirts": "sweatshirts",
+    "blazers": "blazers",
+    "jackets": "jackets",
+    "shirts": "shirts",
+    "pants": "pants",
+    "shorts": "shorts",
+    "sweaters": "sweaters",
+    "jeans": "jeans",
+    "suits": "suits",
+  };
 
-    // Return the array from corresponding slice
+  key = map[key] || key;
 
-    return state[key] ? state[key][key] : [];
-  });
+  return state[key]?.[key] || [];
+});
 
   return (
     <div className="products-container p-4">
