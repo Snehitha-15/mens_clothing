@@ -6,7 +6,7 @@ import { addToCart } from "../../Redux/cartSlice";
 import Categories from "../../components/Categories";
 
 // List of categories
-const categoryList = ["Shirts", "Pants", "T-Shirts", "Sweaters", "Shorts", "Jackets", "Jeans", "Sweatshirts"];
+const categoryList = ["Shirts", "Pants", "T-Shirts", "Sweaters", "Shorts", "Jackets", "Jeans", "Sweatshirts", "Blazer", "Suits"];
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
